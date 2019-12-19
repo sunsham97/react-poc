@@ -10,7 +10,8 @@ const person = props => {
         Some random number between 0 and 30: {Math.floor(Math.random() * 30)}
       </p>
       <p>{props.children}</p>
-      <input type="text" onChange={props.change} />
+      <input type="text" onChange={props.change} value={props.name} />
+      <button onClick={props.delete}>Delete</button>
     </div>
   );
 };
